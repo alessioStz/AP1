@@ -11,7 +11,19 @@ export const wirtschaftContent = [
             "Fixkosten: Unabhängig von der Auslastung (z.B. Miete für das Rechenzentrum, Gehälter).",
             "Variable Kosten: Abhängig von der Nutzung (z.B. Stromverbrauch, Cloud-Ressourcen nach Verbrauch).",
             "Einzelkosten: Direkt einem Produkt/Projekt zuordnungsbar (z.B. Hardware für Projekt A).",
-            "Gemeinkosten: Fallen für das gesamte Unternehmen an (z.B. Verwaltung, Marketing)."
+            "Gemeinkosten: Fallen für das gesamte Unternehmen an (z.B. Verwaltung, Marketing).",
+            "Zuschlagskalkulation: Einzelkosten + Gemeinkostenzuschlag (%) = Selbstkosten."
+        ]
+    },
+    {
+        type: "list",
+        title: "Beispielrechnung: Selbstkosten",
+        items: [
+            "Einzelkosten (Hardware): 1.000 €",
+            "Gemeinkostenzuschlag (Verwaltung/IT): 20% (200 €)",
+            "Selbstkosten = 1.200 €",
+            "Gewinnzuschlag (z.B. 10%): 120 €",
+            "Netto-Verkaufspreis = 1.320 €"
         ]
     },
     {

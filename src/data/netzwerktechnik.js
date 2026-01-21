@@ -61,12 +61,79 @@ export const netzwerkContent = [
         items: [
             "Maske /27: 27 mal eins, dann 5 mal null (11111111.11111111.11111111.11100000) = 255.255.255.224.",
             "Sprungweite: Das letzte gesetzte Bit steht an der Stelle 32 (2^5). Die Netze fangen also bei 0, 32, 64, 96... an.",
-            "Hosts pro Netz: 2^5 - 2 = 30 nutzbare IP-Adressen."
+            "Hosts pro Netz: 2^n - 2 (n = Anzahl der Host-Bits).",
+            "VLSM: Variable Length Subnet Mask für effiziente Aufteilung."
         ]
+    },
+    {
+        type: "image",
+        title: "Das OSI-Referenzmodell (7 Schichten) - Überblick & Protokolle",
+        url: "/assets/images/osi.png"
+    },
+    {
+        type: "section",
+        title: "3. IPv6-Grundlagen (Next Generation)",
+        text: "IPv6 nutzt 128 Bit lange Adressen und löst den Adressmangel von IPv4."
+    },
+    {
+        type: "list",
+        title: "Merkmale von IPv6",
+        items: [
+            "Adresslänge: 128 Bit (hexadezimal dargestellt, z. B. 2001:0db8:85a3:0000:0000:8a2e:0370:7334).",
+            "Notation: 8 Blöcke à 16 Bit. Nullen können gekürzt werden (::), aber nur einmal pro Adresse.",
+            "Link-Local-Adresse (fe80::): Automatisch generiert, nur im eigenen lokalen Netz gültig (ähnlich APIPA).",
+            "SLAAC: Stateless Address Autoconfiguration (IP-Zuweisung ohne DHCPv6).",
+            "Dual-Stack: Gleichzeitiger Betrieb von IPv4 und IPv6 auf einem Gerät."
+        ]
+    },
+    {
+        type: "section",
+        title: "4. Einheiten: MiB vs. MB (Binär vs. Dezimal)",
+        text: "In der IT gibt es zwei Arten, Speichergrößen anzugeben. Die IHK legt hierauf oft großen Wert."
+    },
+    {
+        type: "list",
+        title: "Binärpräfixe vs. Dezimalpräfixe",
+        items: [
+            "Dezimal (Basis 10): 1 KB = 1.000 Byte (10^3). Üblich bei Festplattenherstellern.",
+            "Binär (Basis 2): 1 KiB = 1.024 Byte (2^10). Üblich bei Betriebssystemen.",
+            "Umrechnung: 1 MiB = 1024 KiB. 1 MB = 1000 KB.",
+            "Prüfungstipp: Achte genau auf das 'i' (kibi, mebi, gibi). 1 GiB > 1 GB."
+        ]
+    },
+    {
+        type: "section",
+        title: "5. Praktisches Rechnen & Tools",
+        text: "Vorbereitung auf typische Rechenaufgaben."
     }
 ];
 
 export const netzwerkQuiz = [
+    {
+        question: "Wofür steht das 'i' in MiB (Mebibyte)?",
+        options: ["Internet", "Binär (Power of 2)", "Integration", "Interne Größe"],
+        answer: 1
+    },
+    {
+        question: "Wie viele Bytes sind genau 1 KiB?",
+        options: ["1000", "1024", "2048", "512"],
+        answer: 1
+    },
+    {
+        question: "Was ist das Präfix für eine IPv6 Link-Local-Adresse?",
+        options: ["2001::", "fe80::", "192::", "::1"],
+        answer: 1
+    },
+    {
+        question: "Wie viele Bits hat eine IPv6-Adresse?",
+        options: ["32", "64", "128", "256"],
+        answer: 2
+    },
+    {
+        question: "Wie oft darf die Abkürzung '::' in einer IPv6-Adresse vorkommen?",
+        options: ["Beliebig oft", "Zweimal", "Gar nicht", "Genau einmal"],
+        answer: 3
+    },
     {
         question: "Wie viele Bits hat eine IPv4-Adresse?",
         options: ["16", "32", "64", "128"],
@@ -136,6 +203,16 @@ export const netzwerkQuiz = [
         question: "Wieviele Host-Bits hat ein /28 Netzwerk?",
         options: ["28", "16", "8", "4"],
         answer: 3
+    },
+    {
+        question: "Ein Dokument ist 10 MiB groß. Wie viele KiB sind das?",
+        options: ["10.000 KiB", "10.240 KiB", "80 KiB", "1.024 KiB"],
+        answer: 1
+    },
+    {
+        question: "Ein Scan einer DIN A4 Seite (ca. 600 qcm) mit 300 dpi und 24 Bit Farbtiefe soll unkomprimiert gespeichert werden. Was ist der wichtigste Faktor für die Dateigröße?",
+        options: ["Die Prozessor-Geschwindigkeit", "Auflösung (dpi) und Farbtiefe", "Die USB-Version", "Die Farbe des Scanners"],
+        answer: 1
     },
     {
         question: "Welche Institution vergibt weltweit IP-Adressbereiche an regionale Registrare?",

@@ -74,6 +74,12 @@ export default function Topic() {
                                             </ul>
                                         </>
                                     )}
+                                    {block.type === 'image' && (
+                                        <div className="content-image-container">
+                                            <img src={block.url} alt={block.title} className="content-image" />
+                                            <p className="image-caption">{block.title}</p>
+                                        </div>
+                                    )}
                                 </section>
                             ))}
                         </div>

@@ -14,6 +14,15 @@ export const sicherheitContent = [
         ]
     },
     {
+        type: "list",
+        title: "TOM: Technische und Organisatorische Maßnahmen",
+        items: [
+            "Technische Maßnahmen: Firewall, Verschlüsselung, 2FA, Backup-Systeme, Videoüberwachung.",
+            "Organisatorische Maßnahmen: Mitarbeiterschulungen, Passwortrichtlinien, Zutrittskontrollen, Notfallpläne.",
+            "Ziel der TOMs: Umsetzung der DSGVO-Vorgaben zum Schutz personenbezogener Daten."
+        ]
+    },
+    {
         type: "section",
         title: "2. Kryptographie (Verschlüsselung)",
         text: "Verschlüsselung schützt die Vertraulichkeit und Integrität von Daten."

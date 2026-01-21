@@ -13,7 +13,29 @@ export const hardwareContent = [
             "RAM-Steckplätze: Slots für Arbeitsspeicher (DIMM für Desktop, SO-DIMM für Notebooks).",
             "PCIe-Slots: Für Erweiterungskarten (Grafikkarten, NVMe-Adapter).",
             "Stromanschlüsse: ATX 24-polig für das Board, 4/8-polig für die CPU.",
-            "SATA-Ports: Für den Anschluss von HDDs und SSDs."
+            "Netzteil (ATX Power): Energieversorgung des gesamten Systems.",
+            "Front Panel Header: Anschlüsse für Gehäuse-Buttons und LEDs."
+        ]
+    },
+    {
+        type: "image",
+        title: "ATX Mainboard Architektur & Komponenten",
+        url: "/assets/images/mainboard.png"
+    },
+    {
+        type: "section",
+        title: "2. USV (Unterbrechungsfreie Stromversorgung)",
+        text: "Eine USV schützt IT-Systeme vor Stromausfällen, Unter- und Überspannungen."
+    },
+    {
+        type: "list",
+        title: "USV-Typen & Berechnung",
+        items: [
+            "VFD (Offline): Günstig, schützt nur vor Totalausfall. Kurze Umschaltzeit.",
+            "VI (Line-Interactive): Regelt Spannungsschwankungen aus. Guter Kompromiss.",
+            "VFI (Online/Double-Conversion): Höchster Schutz, keine Umschaltzeit, da Last immer über Akku/Inverter läuft.",
+            "Überbrückungszeit: Zeit, die die USV den Betrieb bei Netzausfall aufrechterhalten kann (Kapazität Ah / Last A).",
+            "Beispielrechnung: Eine USV mit 500W Last und 1000VA Kapazität erreicht je nach Wirkungsgrad ca. 5-15 Min. Überbrückung."
         ]
     },
     {
@@ -41,6 +63,11 @@ export const hardwareContent = [
             "Hot-Spare (Hot-Fix): Eine Reserveplatte im System, die bei einem Defekt automatisch einspringt und den Rebuild startet.",
             "Das RAIDsche Dreieck: Zielkonflikt zwischen Kosten, Sicherheit und Geschwindigkeit."
         ]
+    },
+    {
+        type: "image",
+        title: "RAID Level Vergleich (0, 1, 5, 10) - Struktur & Redundanz",
+        url: "/assets/images/raid.png"
     },
     {
         type: "section",
@@ -217,6 +244,11 @@ export const hardwareQuiz = [
         question: "Was ist 'RAID 10'?",
         options: ["RAID 1 + RAID 0", "RAID 5 + 5", "RAID 6 + 4", "RAID 0 + 0"],
         answer: 0
+    },
+    {
+        question: "Eine USV hat eine Last von 400W. Die Batterie liefert 12V und hat 40Ah. Wie lautet die theoretische Überbrückungszeit (ohne Verluste)?",
+        options: ["1 Stunde", "1,2 Stunden", "2 Stunden", "48 Minuten"],
+        answer: 1
     },
     {
         question: "Wozu dient der Cache am Hardware-RAID-Controller?",

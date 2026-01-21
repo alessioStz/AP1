@@ -48,6 +48,26 @@ export const projektContent = [
         ]
     },
     {
+        type: "image",
+        title: "Netzplantechnik (Beispiel mit Kritischem Pfad & Puffern)",
+        url: "/assets/images/netzplan.png"
+    },
+    {
+        type: "section",
+        title: "4. Projekt-Visualisierung (Gantt-Chart)",
+        text: "Das Gantt-Chart (Balkendiagramm) visualisiert den zeitlichen Ablauf von Aufgaben auf einer Zeitachse."
+    },
+    {
+        type: "list",
+        title: "Vorteile des Gantt-Charts",
+        items: [
+            "Übersichtlichkeit: Man sieht sofort, welche Aufgabe wann startet und wie lange sie dauert.",
+            "Meilensteine: Wichtige Ereignisse ohne Dauer werden als Rauten markiert.",
+            "Abhängigkeiten: Pfeile zeigen, welche Aufgabe von einer anderen abhängt.",
+            "Ressourcenplanung: Man erkennt Überlastungen von Mitarbeitern oder Maschinen."
+        ]
+    },
+    {
         type: "section",
         title: "4. Klassische & Agile Methoden",
         text: "Je nach Komplexität und Flexibilitätsbedarf werden unterschiedliche Frameworks gewählt."
