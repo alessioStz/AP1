@@ -1,0 +1,4 @@
+/* Clean up Vite defaults if needed, or leave empty if not used */
+#root {
+  width: 100%;
+}
